@@ -9,7 +9,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/ASH-WIN-10/uniref-app-api/internal/data"
+	"github.com/ashvwinn/unicrm-api/internal/data"
 	"github.com/joho/godotenv"
 	"github.com/labstack/echo/v4"
 	_ "github.com/lib/pq"
@@ -44,7 +44,7 @@ func main() {
 
 	flag.IntVar(&cfg.port, "port", 8080, "API server port")
 	flag.StringVar(&cfg.env, "env", "development", "Environment (development|staging|production)")
-	flag.StringVar(&cfg.db.dsn, "db-dsn", os.Getenv("UNIREF_DB_DSN"), "PostgreSQL DSN")
+	flag.StringVar(&cfg.db.dsn, "db-dsn", os.Getenv("UNICRM_DB_DSN"), "PostgreSQL DSN")
 	flag.Parse()
 
 	db, err := openDB(cfg)

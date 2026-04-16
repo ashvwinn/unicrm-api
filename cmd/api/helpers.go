@@ -5,7 +5,7 @@ import (
 	"net/url"
 	"strconv"
 
-	"github.com/ASH-WIN-10/uniref-app-api/internal/validator"
+	"github.com/ashvwinn/unicrm-api/internal/validator"
 	"github.com/labstack/echo/v4"
 )
 
