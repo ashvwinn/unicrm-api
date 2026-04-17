@@ -1,0 +1,2 @@
+-- empty down migration
+-- do not drop extensions
